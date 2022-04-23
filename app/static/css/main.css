@@ -1,0 +1,72 @@
+img {
+    max-width: 30px;
+}
+html {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 43px;
+}
+
+a:hover {
+    text-decoration: initial;
+}
+
+.nav-item{
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+#ip {
+    font-size: 20px;
+}
+
+#go-to-index {
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+#clear-completed {
+    font-size: 20px;
+    color: rgb(56, 117, 229);
+}
+
+#todos {
+    font-size: 20px;
+}
+
+#todo {
+    margin-top: 30px;
+    background-color:#F5F5F5;
+    padding: 12px;
+    padding-right: 16px;
+    padding-left: 18px;
+    border-radius: 1em;
+}
+
+#todo a {
+    color: inherit;
+}
+
+#todo a:hover {
+    color: cornflowerblue;
+}
+
+#todo-indicator-todo {
+  padding: 8px;
+  border-radius: 1em;
+  float: right;
+  background-color: rgba(255, 140, 0, 0.794);
+}
+
+#todo-indicator-done {
+  padding: 8px;
+  border-radius: 1em;
+  float: right;
+  background-color: rgba(0, 191, 255, 0.73);
+}
+
+#create-todo {
+    margin-top: 20px;
+}

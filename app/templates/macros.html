@@ -1,0 +1,19 @@
+{% macro render_todo(todo, delete_todo_form) %}
+    <div id="todo">
+        <a href="{{ url_for('delete', todo_id=todo.id) }}">&#10006</a>
+
+        {% if todo.to_dict()['done'] %}
+        <a href="{{ url_for('toggle_complete', todo_id=todo.id) }}">&#9673</a>
+        {% else %}
+            <a href="{{ url_for('toggle_complete', todo_id=todo.id) }}">&#9678</a>
+        {% endif %}
+
+        {{ todo.to_dict()['description'] }}
+
+        {% if todo.to_dict()['done'] %}
+            <span class="badge" id="todo-indicator-done">Completed</span>
+        {% else %}
+            <span class="badge" id="todo-indicator-todo">Todo</span>
+        {% endif %}
+    </div>
+{% endmacro %}
