@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macros %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}
+    {{ super() }}
+    Bienvenida
+{% endblock %}
+
+
+{% block content %}
+    {{ super() }}
+    {% if username %}
+        <h2 class="text-center" id="welcome">Welcome, {{ username | capitalize}}</h2>
+    {% endif %}
+
+    <p class="text-center" id="ip"><strong>IP:</strong> {{user_ip}}</p>
+
+    <div class="container text-center">
+        <a href="{{ url_for('clear') }}" id="clear-completed">Clear completed</a>
+    </div>
+
+    <div class="container" id="todos">
+        {% for todo in todos:%}
+            {{ macros.render_todo(todo) }}
+        {% endfor %}
+    </div>
+
+    <div class="container col-sm-7" id="create-todo">
+        <h2>New todo</h2>
+        <form action="{{ url_for('hello') }}" method="post">
+            {{ wtf.quick_form(todo_form) }} 
+        </form>
+    </div>
+    
+{% endblock %}
