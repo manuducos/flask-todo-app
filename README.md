@@ -8,8 +8,8 @@ This is my first project with flask. It consists on a todo list app in which you
 
 # Database
 
-It is thought to work with a `**gcloud firestore**` database. Before being able to run it, you’ll have to create your gcloud project and set it as the default using **`gcloud sdk`**.
+It is thought to work with a **`gcloud firestore`** database. Before being able to run it, a gcloud project needs to be created and set as default using **`gcloud sdk`**.
 
 # Secret key
 
-A `**key**` at app/config.py has to be set. The default is ‘SUPER SECRET’ but it is not recommended at all to use ir.
+A **`key`** at app/config.py has to be set. The default is ‘SUPER SECRET’ but it is not recommended at all to use ir.
