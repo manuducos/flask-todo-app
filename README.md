@@ -4,7 +4,7 @@
 
 # Introduction
 
-This is my first project with flask. It consists on a todo list app in which you have to register and can create, delete or change the status of todos.
+This is my first project with flask. It consists on a todo list app in which you have to register and can create, delete or change the status of todos. At the time this is written, this project is deployed at: https://flask-todolist-production-1.rj.r.appspot.com
 
 # Database
 
